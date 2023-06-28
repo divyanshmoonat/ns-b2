@@ -2,25 +2,38 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, Rating } from "@mui/material";
+import { useNavigate } from "react-router";
 
-const HotelCard = () => {
+const HotelCard = (props) => {
+  const navigate = useNavigate(); // Initialize the hook
+
+  const hotelDetails = props.hotel;
+  const onCardClick = () => {
+    navigate(`/hotel-details/${hotelDetails.slug}`); // Redirect the user to a different route
+  };
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card onClick={onCardClick} sx={{ maxWidth: 345, marginBottom: 5 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="250"
-          image="https://media.istockphoto.com/id/627892060/photo/hotel-room-suite-with-view.jpg?s=612x612&w=0&k=20&c=YBwxnGH3MkOLLpBKCvWAD8F__T-ypznRUJ_N13Zb1cU="
+          image={hotelDetails.thumbnail}
           alt="hotel"
         />
         <CardContent>
           <Typography style={{}} gutterBottom variant="h6" component="div">
-            Cedar City, Utah, US
+            {hotelDetails.address}
           </Typography>
           <Typography variant="body2" color="text.primary">
-            $120 night
+            ${hotelDetails.pricePerNight} night
           </Typography>
+          <Rating
+            name="read-only"
+            value={Math.floor(hotelDetails.rating)}
+            readOnly
+          />
         </CardContent>
       </CardActionArea>
     </Card>

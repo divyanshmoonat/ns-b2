@@ -17,3 +17,14 @@ xl => extra large
 xxl => extra extra large
 
 https://mui.com/material-ui/react-grid/
+
+----------------------------------------
+28 June 
+1. Call an API
+2. Design Hotel Information Page
+
+
+Dynamic Route for Hotel Details : 
+1. Create a dynamic route in app.js with pattern /hotel-details/:slug
+2. Use hook useNavigate() to redirect the user to hotel-details screen
+3. On hotel details component use useParams hook to get the dynamic slug value
