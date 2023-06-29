@@ -28,3 +28,12 @@ Dynamic Route for Hotel Details :
 1. Create a dynamic route in app.js with pattern /hotel-details/:slug
 2. Use hook useNavigate() to redirect the user to hotel-details screen
 3. On hotel details component use useParams hook to get the dynamic slug value
+
+29 June
+Google based authentication with Firebase
+1. Create a login page with a button "Login With Google" in our project.
+2. Register an account on firebase
+3. Register a project on firebase
+4. Generate a pair of keys/api key/secret key
+5. Use firebase library to allow google login
+6. Retrieve user information like Name, Email, Profile Picture etc
