@@ -26,7 +26,7 @@ const Home = () => {
     <>
       <Container maxWidth="lg" sx={{ marginTop: 10 }}>
         <Typography variant="h4">
-          Welcome {locationDetails.state.userName}
+          Welcome {locationDetails?.state?.userName}
         </Typography>
         <Grid container spacing={2}>
           {hotels.map((hotel) => {

@@ -37,3 +37,9 @@ Google based authentication with Firebase
 4. Generate a pair of keys/api key/secret key
 5. Use firebase library to allow google login
 6. Retrieve user information like Name, Email, Profile Picture etc
+
+30 June
+1. Move navbar to screens which are visible only after login
+2. Username and password based authentication
+3. How to protect and redirect from routes
+4. Logout

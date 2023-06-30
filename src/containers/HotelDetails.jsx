@@ -34,7 +34,7 @@ const HotelDetails = () => {
                   borderRadius: "5px",
                   boxShadow: "5px 5px 5px grey",
                   margin: "10px",
-                  height: "200px"
+                  height: "200px",
                 }}
               />
             </Grid>
