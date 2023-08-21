@@ -59,3 +59,11 @@ Configuring Redux
 4. Create reducer for all modules
 5. Create actions for all variables in every reducer
 6. Update the state data by dispatching actions
+
+21 Aug 
+
+Old State
+Action
+New State
+
+Home -> Action Dispatch -> Reducer -> State update -> useSelector -> Updated State -> Loop

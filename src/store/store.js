@@ -1,5 +1,7 @@
 // import { createStore } from "redux"; // Old deprecated method to create store
 import { configureStore } from "@reduxjs/toolkit"; // Correct and new method to create store
+import logger from "redux-logger";
+
 import { listingReducer } from '../reducers/listingReducer'
 import { detailsReducer } from "../reducers/detailsReducer";
 
@@ -10,7 +12,10 @@ const combinedReducers = {
 
 // Store is just a plain js object
 const store = configureStore({
-	reducer: combinedReducers
+	reducer: combinedReducers,
+	middleware: [logger]
 });
+
+// store.subscribe(() => console.log("STORE UPDATED", store.getState()));
 
 export default store;

@@ -2,7 +2,7 @@ const initState = {
 	hotelsListing: [],
 	isLoading: true,
 	error: {},
-	filters: {}
+	filters: {},
 };
 
 /**
