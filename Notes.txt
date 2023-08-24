@@ -68,3 +68,126 @@ New State
 
 Home -> Action Dispatch -> Reducer -> State update -> useSelector -> Updated State -> Loop
 Test edit from Github UI
+
+23 Aug
+Responsiveness
+
+Dashboard for admin : Desktop/Laptop
+eCommerce web app : Mobile Devices
+
+Approach for RWD
+
+Mobile first
+Desktop first
+
+font-size: 25px;
+
+.card {
+    wdith: 15%; // 6.5 cards
+}
+
+@media only screen (max-wdith: 576px) {
+    // Extra small screen
+    font-size: 14px;
+
+    .card {
+        width: 50%; // 2 cards
+    }
+}
+
+@media only screen (max-wdith: 768px) {
+    // Extra small screen
+    font-size: 14px;
+
+    .card {
+        width: 50%; // 2 cards
+    }
+}
+
+@media only screen (max-wdith: 992px) {
+    // Extra small screen
+    font-size: 14px;
+
+    .card {
+        width: 50%; // 2 cards
+    }
+}
+
+@media only screen (max-wdith: 1200px) {
+    // Extra small screen
+    font-size: 14px;
+
+    .card {
+        width: 50%; // 2 cards
+    }
+}
+
+<div class="container-xxl">
+    <div class="row"> 12 parts
+        <div class="col">
+            <div class="row>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            </div>
+        </div> 
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</div>
+
+
+<div class="container-xxl">
+    <div class="row"> 12 parts
+        <div class="col-lg-2 col-sm-6"></div> 
+        <div class="col-lg-2 col-sm-6"></div>
+        <div class="col-lg-2 col-sm-6"></div>
+        <div class="col-lg-2 col-sm-6"></div>
+        <div class="col-lg-2 col-sm-6"></div>
+        <div class="col-lg-2 col-sm-6"></div>
+    </div>
+</div>
+
+<Grid conatiner>
+    <Grid lg={2} sm={6} item></Grid>
+    <Grid lg={2} sm={6} item></Grid>
+    <Grid lg={2} sm={6} item></Grid>
+    <Grid lg={2} sm={6} item></Grid>
+    <Grid lg={2} sm={6} item></Grid>
+    <Grid lg={2} sm={6} item></Grid>
+</Grid>
+
+<Row> 24 parts
+    <Col lg={4} sm={12}></Col>
+    <Col lg={4} sm={12}></Col>
+    <Col lg={4} sm={12}></Col>
+    <Col lg={4} sm={12}></Col>
+    <Col lg={4} sm={12}></Col>
+    <Col lg={4} sm={12}></Col>
+</Row>
+
+<Grid container spacing={2}> 12 parts
+  <Grid item xs={8}>
+    <Item>xs=8</Item>
+  </Grid>
+  <Grid item xs={4}>
+    <Item>xs=4</Item>
+  </Grid>
+  <Grid item xs={4}>
+    <Item>xs=4</Item>
+  </Grid>
+  <Grid item xs={8}>
+    <Item>xs=8</Item>
+  </Grid>
+</Grid>
+
+24 Aug
+
+Git : Service, used to manage code versioning
+GitHub, GitLab, BitBucket, Google, Microsoft DevOps etc
+
+Cloud : Storage, where we store files (Service)
+Google Drive, OneDrive, Dropbox, MI Cloud, Apple , JioCloud etc
+
+Pull -> Changes (Edit/Add/Delete -> Add file -> Commit) -> Push
