@@ -22,7 +22,8 @@ const Home = () => {
   };
 
   useEffect(() => {
-    getHotelsList(dispatch);
+    // getHotelsList(dispatch);
+    dispatch(getHotelsList());
   }, []);
 
   return (

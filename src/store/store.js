@@ -13,7 +13,7 @@ const combinedReducers = {
 // Store is just a plain js object
 const store = configureStore({
 	reducer: combinedReducers,
-	middleware: [logger]
+	// middleware: []
 });
 
 // store.subscribe(() => console.log("STORE UPDATED", store.getState()));
